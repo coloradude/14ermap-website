@@ -3,8 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mongodb-js/react-mapbox-gl-leaflet": "^1.0.0",
+    "leaflet": "^1.5.1",
+    "mapbox-gl": "^1.4.0",
+    "mapbox-gl-leaflet": "0.0.10",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-leaflet": "^2.4.0",
+    "react-mapbox-gl": "^4.6.1",
     "react-scripts": "3.2.0"
   },
   "scripts": {
