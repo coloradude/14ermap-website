@@ -1,10 +1,33 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 // import ReactMapboxGl, { Layer, Feature , GeoJSONLayer} from 'react-mapbox-gl';
-import geoJSON from './GeoJSON'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-
+// import geoJSON from './GeoJSON'
+// import { Map, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet';
+import ReactMapGl, { NavigationControl, Marker, Popup } from 'react-map-gl'
+import peaks from './peaks'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMountain } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
+
+const mapboxApiToken = 'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg'
+
+// const mapStyle = {
+//   version: 8,
+//   sources: geoJSON,
+//   layers: [
+//         {
+//             id: 'my-layer',
+//             type: 'circle',
+//             source: 'points',
+//             paint: {
+//                 'circle-color': '#f00',
+//                 'circle-radius': 4
+//             }
+//         }
+//     ]
+// }
+
+// console.log(geoJSON)
 
 // const Map = ReactMapboxGl({
 //   accessToken:
@@ -12,7 +35,19 @@ import './App.css';
 // });
 
 
+
 const App = () => {
+
+  const [viewport, setViewport] = useState({
+    width: '100%',
+    height: '100vh',
+    latitude: 39.191984,
+    longitude: -105.535192,
+    zoom: 6.2
+  })
+
+  const [popupInfo, setPopupInfo] = useState(null)
+
   return (
     <div className="App">
       <div className="sideBar">
@@ -31,43 +66,49 @@ const App = () => {
         </a>
       </div>
       <div className='mapArea'>
-      <Map
-        attribution='© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        center={[39.191984, -105.535192]}
-        zoom={7}
-        
-      >
-        <TileLayer
-          tileSize={512}
-          zoomOffset={-1}
-          url='https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg'
-        />
-      </Map>
-        {/* <Map
-          
-          // containerStyle={{
-          //   height: '100%',
-          //   width: '100%'
-          // }}
-          // center={[-105.535192, 39.191984]}
-          // zoom={[6]}
+        <ReactMapGl
+          {...viewport}
+          mapboxApiAccessToken={mapboxApiToken}
+          onViewportChange={viewport => setViewport(viewport)}
+          // onClick={() => setPopupInfo(null)}
         >
-          <MapboxGlLayer 
-            style="mapbox://styles/mapbox/streets-v9"
-            accessToken='pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg'
-          />
-          {/* <GeoJSONLayer
-            data={geoJSON}
-          /> */}
-
-          {/* <Layer type="symbol" id="marker" layout={{ 'icon-image': 'mountain-15' }}>
-            <Feature 
-              coordinates={[-105.535192, 39.191984]} 
-              geometry={{properties: {type: 'point'}}}
-            />
-          </Layer> */}
-          {/* <Marker position={[-105.535192, 39.191984]}>M</Marker> */}
-       
+          <div style={{position: 'absolute', left: 10, top: 10}}>
+            <NavigationControl />
+          </div>
+          {peaks.map(({latitude, longitude, name, thumbnail}) => {
+            return (
+              <Marker
+                latitude={Number(latitude)}
+                longitude={Number(longitude)}
+                
+              >
+                <FontAwesomeIcon 
+                onMouseEnter={() => setPopupInfo({latitude, longitude, name, thumbnail})}
+                icon={faMountain}/>
+              </Marker>
+            )
+          })}
+          {popupInfo && <Popup
+            className='peak-popup'
+            anchor='top'
+            latitude={Number(popupInfo.latitude)}
+            longitude={Number(popupInfo.longitude)}
+            onClose={() => setPopupInfo(null)}
+            closeOnClick={false}
+            captureClick={true}
+            >
+              <div
+                onMouseLeave={() => setPopupInfo(null)}
+                onClick={(e) => {
+                  
+                  console.log('click')
+                }}
+              >
+                <h3>{popupInfo.name}</h3>
+                <img className='peak-thumbnail' src={popupInfo.thumbnail}/>
+              </div>
+            </Popup>}
+        </ReactMapGl>     
       </div>
     </div>
   );
