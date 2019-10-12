@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TrailheadList = ({trailheads}) => {
+export const TrailheadList = ({trailheads}) => {
   return (
     <div className='route-container'>
       <span><h4>Trailheads</h4></span>
@@ -18,4 +18,22 @@ const TrailheadList = ({trailheads}) => {
   )
 }
 
-export default TrailheadList
+export const RouteList = ({routes}) => {
+  return (
+    <div className='route-container'>
+      <span><h4>Routes</h4></span>
+      {routes &&
+      routes.map(route => {
+        return (
+          <button
+            className='route-button'
+          >
+            {`${route.name} • ${route.difficulty}`}
+          </button>
+        )
+      })
+      }
+
+    </div>
+  )
+}

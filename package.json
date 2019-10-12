@@ -7,6 +7,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/react-fontawesome": "^0.1.6",
     "@mongodb-js/react-mapbox-gl-leaflet": "^1.0.0",
+    "@reach/router": "^1.2.1",
     "comma-number": "^2.0.1",
     "font-awesome": "^4.7.0",
     "immutable": "^4.0.0-rc.12",

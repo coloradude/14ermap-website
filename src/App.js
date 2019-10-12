@@ -1,51 +1,11 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import ReactMapGl, { NavigationControl, Marker, Popup } from 'react-map-gl'
-import TrailheadList from './lists/trailhead-list'
-import peaks from './peaks'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMountain } from '@fortawesome/free-solid-svg-icons'
+import { TrailheadList, RouteList } from './lists/trailhead-list'
+import MapCanvas from './Map.js'
 import commaNumber from 'comma-number'
 import './App.css';
 
-const mapboxApiToken = 'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg'
-
-// const mapStyle = {
-//   version: 8,
-//   sources: geoJSON,
-//   layers: [
-//         {
-//             id: 'my-layer',
-//             type: 'circle',
-//             source: 'points',
-//             paint: {
-//                 'circle-color': '#f00',
-//                 'circle-radius': 4
-//             }
-//         }
-//     ]
-// }
-
-// console.log(geoJSON)
-
-// const Map = ReactMapboxGl({
-//   accessToken:
-//     'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg'
-// });
-
-fetch('http://reddit.com/r/all/.json').then(res => res.json()).then(res => console.log(res))
 
 const App = () => {
-
-  const [viewport, setViewport] = useState({
-    width: '100%',
-    height: '100vh',
-    latitude: 39.191984,
-    longitude: -105.535192,
-    zoom: 6.2
-  })
-
-  const [popupInfo, setPopupInfo] = useState(null)
 
   const [peakInfo, setPeakInfo] = useState(null)
   const [trailheadInfo, setTrailheadInfo] = useState(null)
@@ -56,35 +16,28 @@ const App = () => {
       <div className="sideBar">
         <h1>14erMap.com</h1>
         {/* {peakInfo &&  */}
-        <div>
-          {peakInfo &&
-            <div>
-              <h3>{`${peakInfo.name} • ${commaNumber(peakInfo.elevation)}`}</h3>
+        <div className='peak-container'>
+          {peakInfo && [
+              <img 
+                src={peakInfo.thumbnail}
+                className='sidebar-thumbnail'
+              />,
+              <h3>{`${peakInfo.name} • ${commaNumber(peakInfo.elevation)}'`}</h3>,
               <p>{peakInfo.location}</p>
-            </div>
-          }
+            ]}
         </div>
           
-        <div className='route-container'>
-          <span><h4>Routes</h4></span>
-          {routeInfo &&
-            routeInfo.map(route => {
-              return (
-                <button 
-                  className='route-button'
-                >
-                  {`${route.name} • ${route.difficulty}`}
-                </button>
-              )
-            })
-          }
-        </div>
-          
+        <RouteList routes={routeInfo}/>
         <TrailheadList trailheads={trailheadInfo}/>
 
       </div>
       <div className='mapArea'>
-        <ReactMapGl
+        <MapCanvas 
+          setPeakInfo={setPeakInfo}
+          setRouteInfo={setRouteInfo}
+          setTrailheadInfo={setTrailheadInfo}
+        />
+        {/* <ReactMapGl
           {...viewport}
           mapboxApiAccessToken={mapboxApiToken}
           onViewportChange={viewport => setViewport(viewport)}
@@ -127,11 +80,11 @@ const App = () => {
 
                 }}
               >
-                <h3>{popupInfo.name}</h3>
+                <h3>{`${popupInfo.name} • ${commaNumber(popupInfo.elevation)}'`}</h3>
                 <img className='peak-thumbnail' src={popupInfo.thumbnail}/>
               </div>
             </Popup>}
-        </ReactMapGl>     
+        </ReactMapGl> */}
       </div>
     </div>
   );

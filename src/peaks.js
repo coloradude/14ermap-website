@@ -11,7 +11,7 @@ const peaks = [{
   "counties" : "Lake", 
   "latitude" : "39.118075", 
   "longitude" : "-106.445417", 
-  "thumbnail" : "http://www.14ers.com/photos/mtelbert/200508_Elbert01a.jpg", 
+  "thumbnail" : "https://static.rootsrated.com/image/upload/s--jSLqtVxt--/t_rr_large_traditional/cx5jxprbqrbjvkhbmhaz.jpg", 
   "peakConditions" : [
       {
           "route" : "Passing through the area", 
@@ -62,7 +62,7 @@ const peaks = [{
   "counties" : "Lake", 
   "latitude" : "39.187298", 
   "longitude" : "-106.475548", 
-  "thumbnail" : "http://www.14ers.com/photos/mtmassive/201108_Massive01a.jpg", 
+  "thumbnail" : "https://golfadvisor.brightspotcdn.com/dims4/default/e42fd94/2147483647/strip/true/crop/720x465+0+38/resize/930x600!/quality/90/?url=https%3A%2F%2Fgolfadvisor.brightspotcdn.com%2Fb6%2F30%2F5ba3f13f7b96c11406e506704227%2F15456.jpg", 
   "peakConditions" : [
       {
           "route" : "East Slopes", 
@@ -112,7 +112,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.924328", 
   "longitude" : "-106.320618", 
-  "thumbnail" : "/images/mt-harvard.jpeg", 
+  "thumbnail" : "https://www.14ers.com/photos/harvardgroup/rt_harv4.jpg", 
   "peakConditions" : [
       {
           "route" : "Harvard and Columbia Traverse", 
@@ -159,7 +159,7 @@ const peaks = [{
   "counties" : "Alamosa, Huerfano, Costilla", 
   "latitude" : "37.577473", 
   "longitude" : "-105.485443", 
-  "thumbnail" : "http://www.14ers.com/photos/blancagroup/200607_Blanca01a.jpg", 
+  "thumbnail" : "https://www.rickcrandall.net/wp-content/uploads/2015/08/86_Blanca-Peak-Climb-1_03-1.jpg", 
   "peakConditions" : [
       {
           "route" : "Blanca and Ellingwood", 
@@ -206,7 +206,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "39.029251", 
   "longitude" : "-106.473145", 
-  "thumbnail" : "http://www.14ers.com/photos/laplatapeak/200509_Lap01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/9/95/2007-06-24-plata-eve-close2.jpg", 
   "peakConditions" : [
       {
           "route" : "Southwest Ridge", 
@@ -253,7 +253,7 @@ const peaks = [{
   "counties" : "Hinsdale", 
   "latitude" : "38.071507", 
   "longitude" : "-107.462166", 
-  "thumbnail" : "http://www.14ers.com/photos/uncompahgrepeak/200206_Unco01a.jpg", 
+  "thumbnail" : "hhttps://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Uncompahgre_peak.jpg/640px-Uncompahgre_peak.jpg", 
   "peakConditions" : [
       {
           "route" : "South Ridge from Nellie Creek", 
@@ -304,7 +304,7 @@ const peaks = [{
   "counties" : "Saguache", 
   "latitude" : "37.966972", 
   "longitude" : "-105.585304", 
-  "thumbnail" : "http://www.14ers.com/photos/crestonegroup/201507_Crestones01a.jpg", 
+  "thumbnail" : "http://www.hikingintherockies.com/fourteeners/crestone/Crestone_Peak_Needle_Traverse_0035.jpg", 
   "peakConditions" : [
       {
           "route" : "South Face", 
@@ -354,7 +354,7 @@ const peaks = [{
   "counties" : "Park", 
   "latitude" : "39.351391", 
   "longitude" : "-106.111404", 
-  "thumbnail" : "http://www.14ers.com/photos/mtlincoln/200811_Linc01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/8/82/Mount_Lincoln_Colorado_July_2016.jpg", 
   "peakConditions" : [
       {
           "route" : "From Kite Lake", 
@@ -401,7 +401,7 @@ const peaks = [{
   "counties" : "Clear Creek, Summit", 
   "latitude" : "39.633820", 
   "longitude" : "-105.817520", 
-  "thumbnail" : "http://www.14ers.com/photos/graystorreys/200706_Tor01a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/graystorreys/peakphotos/large/199907_GraTor02.jpg?lu=20180101", 
   "peakConditions" : [
       {
           "route" : "Grays and Torreys", 
@@ -448,7 +448,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.674088", 
   "longitude" : "-106.246201", 
-  "thumbnail" : "http://www.14ers.com/photos/mtantero/201205_Ant01a.jpg", 
+  "thumbnail" : "https://sp-images.summitpost.org/729716.JPG?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=4a555fa0326f486170f26f1617e1c2a1", 
   "peakConditions" : [
       {
           "route" : "West Slopes", 
@@ -499,7 +499,7 @@ const peaks = [{
   "counties" : "Clear Creek, Summit", 
   "latitude" : "39.642742", 
   "longitude" : "-105.821259", 
-  "thumbnail" : "http://www.14ers.com/photos/graystorreys/200706_Tor01a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/graystorreys/peakphotos/large/199907_GraTor03.jpg?lu=20180101", 
   "peakConditions" : [
       {
           "route" : "Kelso Ridge", 
@@ -546,7 +546,7 @@ const peaks = [{
   "counties" : "Pitkin", 
   "latitude" : "39.009647", 
   "longitude" : "-106.86144", 
-  "thumbnail" : "http://www.14ers.com/photos/castlepeak/200807_Cast04a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Castle_Peak_CO_Full.JPG/640px-Castle_Peak_CO_Full.JPG", 
   "peakConditions" : [
       {
           "route" : "Passing through the area", 
@@ -593,7 +593,7 @@ const peaks = [{
   "counties" : "Summit", 
   "latitude" : "39.397236", 
   "longitude" : "-106.106430", 
-  "thumbnail" : "http://www.14ers.com/photos/quandarypeak/201201_Quan01a.jpg", 
+  "thumbnail" : "https://www.rickcrandall.net/wp-content/uploads/images/60_QuandaryPeak-1_03.jpg", 
   "peakConditions" : [
       {
           "route" : "East Ridge", 
@@ -640,7 +640,7 @@ const peaks = [{
   "counties" : "Clear Creek", 
   "latitude" : "39.588360", 
   "longitude" : "-105.643333", 
-  "thumbnail" : "http://www.14ers.com/photos/mtevans/200205_Evans10a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/evansgroup/peakphotos/large/201201_Bier02.jpg?lu=20190320", 
   "peakConditions" : [
       {
           "route" : "West Ridge via Mt. Spalding", 
@@ -687,7 +687,7 @@ const peaks = [{
   "counties" : "Boulder", 
   "latitude" : "40.254902", 
   "longitude" : "-105.615738", 
-  "thumbnail" : "http://www.14ers.com/photos/longspeak/200508_Longs02a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/longspeak/peakphotos/large/200011_Longs01.jpg?lu=20180101", 
   "peakConditions" : [
       {
           "route" : "Cables Route", 
@@ -738,7 +738,7 @@ const peaks = [{
   "counties" : "Dolores", 
   "latitude" : "37.839310", 
   "longitude" : "-107.991570", 
-  "thumbnail" : "http://www.14ers.com/photos/wilsongroup/200708_MtWil01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Wilson_Peak_and_San_Miguel_Mountains.jpg/640px-Wilson_Peak_and_San_Miguel_Mountains.jpg", 
   "peakConditions" : [
       {
           "route" : "North Slopes", 
@@ -785,7 +785,7 @@ const peaks = [{
   "counties" : "Park", 
   "latitude" : "39.346844", 
   "longitude" : "-106.118576", 
-  "thumbnail" : "http://www.14ers.com/photos/mtcameron/200409_Cam01a_l.jpg", 
+  "thumbnail" : "https://www.peakbagger.com/photo/p1488L.jpg", 
   "peakConditions" : [
       {
           "route" : "Via Democrat", 
@@ -832,7 +832,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.619083", 
   "longitude" : "-106.239296", 
-  "thumbnail" : "http://www.14ers.com/photos/shavanogroup/200507_Shav02a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/e/ef/Esprit_Point_and_Mount_Shavano.jpg", 
   "peakConditions" : [
       {
           "route" : "East Slopes", 
@@ -882,7 +882,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.960575", 
   "longitude" : "-106.360832", 
-  "thumbnail" : "http://www.14ers.com/photos/belfordoxford/200606_Belf02a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mt._belford_north_approach.jpg/640px-Mt._belford_north_approach.jpg", 
   "peakConditions" : [
       {
           "route" : "Northwest Ridge", 
@@ -929,7 +929,7 @@ const peaks = [{
   "counties" : "Saguache, Custer", 
   "latitude" : "37.964737", 
   "longitude" : "-105.576683", 
-  "thumbnail" : "http://www.14ers.com/photos/crestonegroup/201507_Crestones02a.jpg", 
+  "thumbnail" : "https://static.rootsrated.com/image/upload/s--2ODC1aD0--/t_rr_large_natural/eibcnjjni1dqbwufa0no.jpg", 
   "peakConditions" : [
       {
           "route" : "South Face", 
@@ -982,7 +982,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.749062", 
   "longitude" : "-106.242432", 
-  "thumbnail" : "http://www.14ers.com/photos/mtprinceton/201506_Prin01a.jpg", 
+  "thumbnail" : "http://www.climbingolder.net/~statcy.bender/photos/Mt_Princeton_1.jpg", 
   "peakConditions" : [
       {
           "route" : "East Slopes", 
@@ -1033,7 +1033,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.844051", 
   "longitude" : "-106.313965", 
-  "thumbnail" : "http://www.14ers.com/photos/mtyale/200606_Yale01a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/mtyale/peakphotos/200606_Yale01.jpg?lu=20180101", 
   "peakConditions" : [
       {
           "route" : "Southwest Slopes", 
@@ -1080,7 +1080,7 @@ const peaks = [{
   "counties" : "Park", 
   "latitude" : "39.335060", 
   "longitude" : "-106.107376", 
-  "thumbnail" : "http://www.14ers.com/photos/mtbross/200405_Bross01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/6/6e/Mt_Bross.jpg", 
   "peakConditions" : [
       {
           "route" : "Democrat, Cameron, Lincoln, Bross", 
@@ -1127,7 +1127,7 @@ const peaks = [{
   "counties" : "Saguache", 
   "latitude" : "37.979759", 
   "longitude" : "-105.602562", 
-  "thumbnail" : "http://www.14ers.com/photos/kitcarsongroup/200707_kitcar01a.jpg", 
+  "thumbnail" : "https://www.14ergolf.com/wp-content/uploads/2016/07/Kit-Carson-Peak.jpg", 
   "peakConditions" : [
       {
           "route" : "From Challenger Point", 
@@ -1178,7 +1178,7 @@ const peaks = [{
   "counties" : "Dolores", 
   "latitude" : "37.839275", 
   "longitude" : "-108.005219", 
-  "thumbnail" : "http://www.14ers.com/photos/wilsongroup/201007_ElD01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/El_Diente_Peak.JPG/640px-El_Diente_Peak.JPG", 
   "peakConditions" : [
       {
           "route" : "North Slopes", 
@@ -1225,7 +1225,7 @@ const peaks = [{
   "counties" : "Pitkin, Gunnison", 
   "latitude" : "39.070713", 
   "longitude" : "-106.989113", 
-  "thumbnail" : "http://www.14ers.com/photos/maroonbells/200807_Maro01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maroon_Bells_%2811553%29a.jpg/640px-Maroon_Bells_%2811553%29a.jpg", 
   "peakConditions" : [
       {
           "route" : "South Ridge", 
@@ -1272,7 +1272,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.625622", 
   "longitude" : "-106.250710", 
-  "thumbnail" : "http://www.14ers.com/photos/shavanogroup/200507_Shav02a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/e/ef/Esprit_Point_and_Mount_Shavano.jpg", 
   "peakConditions" : [
       {
           "route" : "Passing through the area", 
@@ -1319,7 +1319,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.964680", 
   "longitude" : "-106.338432", 
-  "thumbnail" : "http://www.14ers.com/photos/belfordoxford/200606_Belf02a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/belfordgroup/rt_oxfo2.jpg", 
   "peakConditions" : [
       {
           "route" : "From Mt. Belford", 
@@ -1366,7 +1366,7 @@ const peaks = [{
   "counties" : "Ouray", 
   "latitude" : "38.003605", 
   "longitude" : "-107.792229", 
-  "thumbnail" : "http://www.14ers.com/photos/mtsneffels/200808_Snef24a.jpg", 
+  "thumbnail" : "https://sp-images.summitpost.org/132662.jpeg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=dbc604cd3640ae83d97baf9c73b45b77", 
   "peakConditions" : [
       {
           "route" : "From Yankee Boy Basin", 
@@ -1416,7 +1416,7 @@ const peaks = [{
   "counties" : "Park, Lake", 
   "latitude" : "39.339542", 
   "longitude" : "-106.139946", 
-  "thumbnail" : "http://www.14ers.com/photos/mtdemocrat/201211_Demo01a.jpg", 
+  "thumbnail" : "https://www.peakbagger.com/photo/p1487L.jpg", 
   "peakConditions" : [
       {
           "route" : "East Slopes", 
@@ -1463,7 +1463,7 @@ const peaks = [{
   "counties" : "Pitkin", 
   "latitude" : "39.150166", 
   "longitude" : "-107.083221", 
-  "thumbnail" : "http://www.14ers.com/photos/capitolpeak/200608_Capi02a.jpg", 
+  "thumbnail" : "https://cdn.aspentimes.com/wp-content/uploads/sites/5/2017/08/hikerdeathmain-1240x930.jpg", 
   "peakConditions" : [
       {
           "route" : "Northeast Ridge from Capitol Lake", 
@@ -1515,7 +1515,7 @@ const peaks = [{
   "counties" : "El Paso", 
   "latitude" : "38.840542", 
   "longitude" : "-105.044357", 
-  "thumbnail" : "http://www.14ers.com/photos/pikespeak/201506_Pikes01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/b/be/Pikespeak.JPG", 
   "peakConditions" : [
       {
           "route" : "Northwest Slopes", 
@@ -1562,7 +1562,7 @@ const peaks = [{
   "counties" : "Pitkin, Gunnison", 
   "latitude" : "39.118809", 
   "longitude" : "-107.066528", 
-  "thumbnail" : "http://www.14ers.com/photos/snowmassmtn/200608_Snow04a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Hagerman_Peak_and_Snowmass_Mountain.jpg/640px-Hagerman_Peak_and_Snowmass_Mountain.jpg", 
   "peakConditions" : [
       {
           "route" : "S-Ridge", 
@@ -1613,7 +1613,7 @@ const peaks = [{
   "counties" : "La Plata", 
   "latitude" : "37.621948", 
   "longitude" : "-107.622498", 
-  "thumbnail" : "http://matt.tracz.org/2010/07_04/IMG_9186_stitch.jpg", 
+  "thumbnail" : "https://images.fineartamerica.com/images-medium-large-5/colorado-14er-mt-eolus-and-the-sidewalk-in-the-sky-aaron-spong.jpg", 
   "peakConditions" : [
       {
           "route" : "Northeast Ridge", 
@@ -1660,7 +1660,7 @@ const peaks = [{
   "counties" : "La Plata", 
   "latitude" : "37.621235", 
   "longitude" : "-107.591774", 
-  "thumbnail" : "http://www.14ers.com/photos/windomgroup/200607_Wind01a.jpg", 
+  "thumbnail" : "https://sp-images.summitpost.org/811619.JPG?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=e093d8b98e3a97fb0d5edbf667332ee5", 
   "peakConditions" : [
       {
           "route" : "West Ridge", 
@@ -1707,7 +1707,7 @@ const peaks = [{
   "counties" : "Saguache", 
   "latitude" : "37.980267", 
   "longitude" : "-105.606766", 
-  "thumbnail" : "http://www.14ers.com/photos/kitcarsongroup/201107_kitcar02a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Challenger_Point_from_Kit_Carson.JPG/640px-Challenger_Point_from_Kit_Carson.JPG", 
   "peakConditions" : [
       {
           "route" : "North Slope", 
@@ -1758,7 +1758,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.903957", 
   "longitude" : "-106.297485", 
-  "thumbnail" : "http://www.14ers.com/photos/harvardgroup/200606_Colu01a.jpg", 
+  "thumbnail" : "http://4.bp.blogspot.com/-OhLNlzEWapw/UC_JHZkxS5I/AAAAAAAAOXg/ZbN29GO4nYI/s1600/A1+Columbia+from+Harvard.JPG", 
   "peakConditions" : [
       {
           "route" : "Harvard and Columbia Traverse", 
@@ -1805,7 +1805,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.947559", 
   "longitude" : "-106.378471", 
-  "thumbnail" : "http://www.14ers.com/photos/missourimtn/200508_Miss01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/1/1f/Missouri_Mountain_%28Colorado%29_-_2006-07-16.jpg", 
   "peakConditions" : [
       {
           "route" : "West Ridge", 
@@ -1852,7 +1852,7 @@ const peaks = [{
   "counties" : "Custer", 
   "latitude" : "37.976105", 
   "longitude" : "-105.555351", 
-  "thumbnail" : "http://www.14ers.com/photos/humboldtpeak/200807_Humb01a.jpg", 
+  "thumbnail" : "https://cdn-files.apstatic.com/hike/7006092_medium_1554319993.jpg", 
   "peakConditions" : [
       {
           "route" : "West Ridge", 
@@ -1903,7 +1903,7 @@ const peaks = [{
   "counties" : "Clear Creek", 
   "latitude" : "39.582638", 
   "longitude" : "-105.668610", 
-  "thumbnail" : "http://www.14ers.com/photos/mtbierstadt/200507_Bier01a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/evansgroup/rt_bier1.jpg", 
   "peakConditions" : [
       {
           "route" : "Bierstadt, Sawtooth, Evans", 
@@ -1950,7 +1950,7 @@ const peaks = [{
   "counties" : "Pitkin", 
   "latitude" : "39.01514", 
   "longitude" : "-106.863281", 
-  "thumbnail" : "http://www.14ers.com/photos/castlepeak/200807_Cast01a.jpg", 
+  "thumbnail" : "https://i0.wp.com/www.thevirtualsherpa.com/wp-content/uploads/2017/07/DSC_1591.jpg?resize=1000%2C667", 
   "peakConditions" : [
       {
           "route" : "Passing through the area", 
@@ -1997,7 +1997,7 @@ const peaks = [{
   "counties" : "La Plata", 
   "latitude" : "37.627285", 
   "longitude" : "-107.595894", 
-  "thumbnail" : "http://www.14ers.com/photos/windomgroup/200607_Sunl01a.jpg", 
+  "thumbnail" : "http://www.14ers.com/photos/windomgroup/200607_Sunl01a.https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Sunlight_Peak.jpg/640px-Sunlight_Peak.jpg", 
   "peakConditions" : [
       {
           "route" : "South Face", 
@@ -2044,7 +2044,7 @@ const peaks = [{
   "counties" : "Hinsdale", 
   "latitude" : "37.913021", 
   "longitude" : "-107.504478", 
-  "thumbnail" : "http://www.14ers.com/photos/handiespeak/200707_Hand03a.jpg", 
+  "thumbnail" : "https://www.14ers.com/photos/handiespeak/peakphotos/200707_Hand03.jpg?lu=20180101", 
   "peakConditions" : [
       {
           "route" : "East Slopes", 
@@ -2095,7 +2095,7 @@ const peaks = [{
   "counties" : "Costilla", 
   "latitude" : "37.122173", 
   "longitude" : "-105.185593", 
-  "thumbnail" : "http://www.14ers.com/photos/culebrapeak/201508_Cule01a.jpg", 
+  "thumbnail" : "https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/7/9e/79ef115c-a824-5616-8ccd-2c0d1b8697c4/5b39f2beb99fa.image.jpg", 
   "standard" : true, 
   "images" : [
 
@@ -2146,7 +2146,7 @@ const peaks = [{
   "counties" : "Alamosa, Huerfano", 
   "latitude" : "37.582508", 
   "longitude" : "-105.492569", 
-  "thumbnail" : "http://www.14ers.com/photos/blancagroup/200607_Elli01a.jpg", 
+  "thumbnail" : "https://sp-images.summitpost.org/547400.jpg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=f8b7f603a1532d29a51e7d808f11d1da", 
   "peakConditions" : [
       {
           "route" : "North Ridge via South Zapata Creek", 
@@ -2193,7 +2193,7 @@ const peaks = [{
   "counties" : "Costilla", 
   "latitude" : "37.583801", 
   "longitude" : "-105.444763", 
-  "thumbnail" : "http://www.14ers.com/photos/mtlindsey/200606_Lind02a.jpg", 
+  "thumbnail" : "https://www.mountainphotography.com/images/xl/20140623-Mt-Lindsey-Morning.jpg", 
   "images" : [
 
   ], 
@@ -2243,7 +2243,7 @@ const peaks = [{
   "counties" : "La Plata", 
   "latitude" : "37.625416", 
   "longitude" : "-107.620995", 
-  "thumbnail" : "http://www.14ers.com/photos/windomgroup/200607_Eolus01a.jpg", 
+  "thumbnail" : "https://sp-images.summitpost.org/732724.jpg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=859643f26d399611ced74bafea054335", 
   "peakConditions" : [
       {
           "route" : "South Ridge", 
@@ -2290,7 +2290,7 @@ const peaks = [{
   "counties" : "Alamosa, Costilla", 
   "latitude" : "37.566624", 
   "longitude" : "-105.497162", 
-  "thumbnail" : "http://www.14ers.com/photos/blancagroup/200607_Litt01a_l.jpg", 
+  "thumbnail" : "http://www.hikingintherockies.com/fourteeners/littlebear/Little_Bear_Peak_P1010017.jpg", 
   "peakConditions" : [
       {
           "route" : "Little Bear-to-Blanca Traverse", 
@@ -2337,7 +2337,7 @@ const peaks = [{
   "counties" : "Lake, Park", 
   "latitude" : "39.225006", 
   "longitude" : "-106.169945", 
-  "thumbnail" : "http://www.14ers.com/photos/mtsherman/201207_Sher02a.jpg", 
+  "thumbnail" : "http://coloradoguy.com/colorado-rocky-mountains/colorado-rocky-mountains12.jpg", 
   "peakConditions" : [
       {
           "route" : "Southwest Ridge from Fourmile Creek", 
@@ -2384,7 +2384,7 @@ const peaks = [{
   "counties" : "Hinsdale", 
   "latitude" : "37.940880", 
   "longitude" : "-107.421654", 
-  "thumbnail" : "http://www.14ers.com/photos/redcloudgroup/200606_Redc01a.jpg", 
+  "thumbnail" : "https://www.mountainphotography.com/images/xl/20100907-Redcloud-Peak.jpg", 
   "peakConditions" : [
       {
           "route" : "Northeast Ridge", 
@@ -2431,7 +2431,7 @@ const peaks = [{
   "counties" : "Pitkin", 
   "latitude" : "39.071545", 
   "longitude" : "-106.950188", 
-  "thumbnail" : "http://www.14ers.com/photos/pyramidpeak/200807_Pyra01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Pyramid_Peak.jpg/640px-Pyramid_Peak.jpg", 
   "peakConditions" : [
       {
           "route" : "Northeast Ridge", 
@@ -2481,7 +2481,7 @@ const peaks = [{
   "counties" : "San Miguel", 
   "latitude" : "37.859913", 
   "longitude" : "-107.984795", 
-  "thumbnail" : "http://www.14ers.com/photos/wilsongroup/200604_Wils01a.jpg", 
+  "thumbnail" : "https://www.josephfiler.com/images/xl/Colorado-Fall-Wilson-Peak-8157.jpg", 
   "peakConditions" : [
       {
           "route" : "Southwest Ridge", 
@@ -2532,7 +2532,7 @@ const peaks = [{
   "counties" : "Ouray, Hinsdale", 
   "latitude" : "38.060593", 
   "longitude" : "-107.510834", 
-  "thumbnail" : "http://www.14ers.com/photos/wetterhornpeak/200707_Wett01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wetterhorn_peak.jpg/640px-Wetterhorn_peak.jpg", 
   "peakConditions" : [
       {
           "route" : "Southeast Ridge", 
@@ -2584,7 +2584,7 @@ const peaks = [{
   "counties" : "Saguache", 
   "latitude" : "37.986897", 
   "longitude" : "-106.931389", 
-  "thumbnail" : "http://www.14ers.com/photos/sanluispeak/200209_San01a.jpg", 
+  "thumbnail" : "https://cdn-files.apstatic.com/hike/7020395_medium_1554838351.jpg", 
   "peakConditions" : [
       {
           "route" : "Northeast Ridge", 
@@ -2635,7 +2635,7 @@ const peaks = [{
   "counties" : "Pitkin", 
   "latitude" : "39.076077", 
   "longitude" : "-106.987267", 
-  "thumbnail" : "http://www.14ers.com/photos/maroonbells/200607_NMar01a.jpg", 
+  "thumbnail" : "https://sp-images.summitpost.org/129363.jpg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=b6679cdd319cf856b63b3bdd41d22aed", 
   "peakConditions" : [
       {
           "route" : "Bells traverse", 
@@ -2682,7 +2682,7 @@ const peaks = [{
   "counties" : "Eagle", 
   "latitude" : "39.466713", 
   "longitude" : "-106.481766", 
-  "thumbnail" : "http://www.14ers.com/photos/mtholycross/200706_Holy01a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mount_of_the_Holy_Cross%2C_2009.jpg/640px-Mount_of_the_Holy_Cross%2C_2009.jpg", 
   "peakConditions" : [
       {
           "route" : "North Ridge", 
@@ -2734,7 +2734,7 @@ const peaks = [{
   "counties" : "Chaffee", 
   "latitude" : "38.945423", 
   "longitude" : "-106.438126", 
-  "thumbnail" : "http://www.14ers.com/photos/huronpeak/200606_Huro02a.jpg", 
+  "thumbnail" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Huron_Peak_%2848458753091%29.jpg/640px-Huron_Peak_%2848458753091%29.jpg", 
   "peakConditions" : [
       {
           "route" : "Northwest Slopes", 
@@ -2781,7 +2781,7 @@ const peaks = [{
   "counties" : "Hinsdale", 
   "latitude" : "37.922604", 
   "longitude" : "-107.425606", 
-  "thumbnail" : "http://www.14ers.com/photos/redcloudgroup/200606_Sun01a.jpg", 
+  "thumbnail" : "https://sp-images.summitpost.org/540464.JPG?auto=format&fit=max&ixlib=php-2.1.1&q=35&w=1024&s=abbdd5ea60d0fb5d148b3e61c562f017", 
   "peakConditions" : [
       {
           "route" : "From Redcloud Peak", 

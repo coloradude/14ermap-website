@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   display: flex;
+  height: 100vh;
 }
 
 .App-logo {
@@ -17,7 +18,17 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
-  width: 50%
+  width: 50%;
+  overflow-y: scroll;
+  max-width: 100%;
+}
+
+.peak-container {
+  max-width: 100%;
+}
+
+.sidebar-thumbnail {
+  max-width: 90%
 }
 
 .App-link {
