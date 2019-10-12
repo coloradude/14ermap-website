@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
-// import ReactMapboxGl, { Layer, Feature , GeoJSONLayer} from 'react-mapbox-gl';
-// import geoJSON from './GeoJSON'
-// import { Map, TileLayer, Marker, Popup, GeoJSON } from 'react-leaflet';
 import ReactMapGl, { NavigationControl, Marker, Popup } from 'react-map-gl'
+import TrailheadList from './lists/trailhead-list'
 import peaks from './peaks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMountain } from '@fortawesome/free-solid-svg-icons'
@@ -49,47 +47,41 @@ const App = () => {
 
   const [popupInfo, setPopupInfo] = useState(null)
 
-  const [activePeakInfo, setActivePeakInfo] = useState(null)
-
+  const [peakInfo, setPeakInfo] = useState(null)
+  const [trailheadInfo, setTrailheadInfo] = useState(null)
+  const [routeInfo, setRouteInfo] = useState(null)
 
   return (
     <div className="App">
       <div className="sideBar">
         <h1>14erMap.com</h1>
-        {activePeakInfo && 
+        {/* {peakInfo &&  */}
         <div>
-          <h3>{`${activePeakInfo.peak.name} • ${commaNumber(activePeakInfo.peak.elevation)}`}</h3>
-          <p>{activePeakInfo.peak.location}</p>
-          <div className='route-container'>
-            <span><h4>Routes</h4></span>
-            {activePeakInfo.peakRoutes &&
-              activePeakInfo.peakRoutes.map(route => {
-                return (
-                  <button 
-                    className='route-button'
-                  >
-                    {`${route.name} • ${route.difficulty}`}
-                  </button>
-                )
-              })
-            }
-          </div>
-          <div className='route-container'>
-            <span><h4>Trailheads</h4></span>
-            {activePeakInfo.peakTrailheads &&
-              activePeakInfo.peakTrailheads.map(trailhead => {
-                return (
+          {peakInfo &&
+            <div>
+              <h3>{`${peakInfo.name} • ${commaNumber(peakInfo.elevation)}`}</h3>
+              <p>{peakInfo.location}</p>
+            </div>
+          }
+        </div>
+          
+        <div className='route-container'>
+          <span><h4>Routes</h4></span>
+          {routeInfo &&
+            routeInfo.map(route => {
+              return (
                 <button 
                   className='route-button'
                 >
-                  {`${trailhead.name}`}
+                  {`${route.name} • ${route.difficulty}`}
                 </button>
-                )
-              })
-            }
-          </div>
+              )
+            })
+          }
         </div>
-        }
+          
+        <TrailheadList trailheads={trailheadInfo}/>
+
       </div>
       <div className='mapArea'>
         <ReactMapGl
@@ -125,12 +117,14 @@ const App = () => {
               <div
                 onMouseLeave={() => setPopupInfo(null)}
                 onClick={() => {
-                  setActivePeakInfo({peak: popupInfo, trailheads: null, routes: null})
+                  setPeakInfo(popupInfo)
                   fetch(`http://localhost:8000/peaks/${popupInfo.pkKey}`)
                     .then(res => res.json())
-                    .then(res => setActivePeakInfo({...res, peak: popupInfo}))
-                  
-                  console.log('click')
+                    .then(({peakTrailheads, peakRoutes}) => {
+                      setTrailheadInfo(peakTrailheads)
+                      setRouteInfo(peakRoutes)
+                    })
+
                 }}
               >
                 <h3>{popupInfo.name}</h3>
