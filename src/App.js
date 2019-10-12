@@ -7,6 +7,7 @@ import ReactMapGl, { NavigationControl, Marker, Popup } from 'react-map-gl'
 import peaks from './peaks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMountain } from '@fortawesome/free-solid-svg-icons'
+import commaNumber from 'comma-number'
 import './App.css';
 
 const mapboxApiToken = 'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg'
@@ -34,7 +35,7 @@ const mapboxApiToken = 'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rd
 //     'pk.eyJ1IjoiY29sb3JhZHVkZSIsImEiOiJjaWY2NnN5MjAwYjVxc21rdTdzdWQwd2NtIn0.4_IhtN06SX3K3moZ1da-cg'
 // });
 
-
+fetch('http://reddit.com/r/all/.json').then(res => res.json()).then(res => console.log(res))
 
 const App = () => {
 
@@ -48,42 +49,66 @@ const App = () => {
 
   const [popupInfo, setPopupInfo] = useState(null)
 
+  const [activePeakInfo, setActivePeakInfo] = useState(null)
+
+
   return (
     <div className="App">
       <div className="sideBar">
         <h1>14erMap.com</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {activePeakInfo && 
+        <div>
+          <h3>{`${activePeakInfo.peak.name} • ${commaNumber(activePeakInfo.peak.elevation)}`}</h3>
+          <p>{activePeakInfo.peak.location}</p>
+          <div className='route-container'>
+            <span><h4>Routes</h4></span>
+            {activePeakInfo.peakRoutes &&
+              activePeakInfo.peakRoutes.map(route => {
+                return (
+                  <button 
+                    className='route-button'
+                  >
+                    {`${route.name} • ${route.difficulty}`}
+                  </button>
+                )
+              })
+            }
+          </div>
+          <div className='route-container'>
+            <span><h4>Trailheads</h4></span>
+            {activePeakInfo.peakTrailheads &&
+              activePeakInfo.peakTrailheads.map(trailhead => {
+                return (
+                <button 
+                  className='route-button'
+                >
+                  {`${trailhead.name}`}
+                </button>
+                )
+              })
+            }
+          </div>
+        </div>
+        }
       </div>
       <div className='mapArea'>
         <ReactMapGl
           {...viewport}
           mapboxApiAccessToken={mapboxApiToken}
           onViewportChange={viewport => setViewport(viewport)}
-          // onClick={() => setPopupInfo(null)}
         >
-          <div style={{position: 'absolute', left: 10, top: 10}}>
+          <div className='navigation-control'>
             <NavigationControl />
           </div>
-          {peaks.map(({latitude, longitude, name, thumbnail}) => {
+          {peaks.map((peak) => {
             return (
               <Marker
-                latitude={Number(latitude)}
-                longitude={Number(longitude)}
+                latitude={Number(peak.latitude)}
+                longitude={Number(peak.longitude)}
                 
               >
                 <FontAwesomeIcon 
-                onMouseEnter={() => setPopupInfo({latitude, longitude, name, thumbnail})}
+                onMouseEnter={() => setPopupInfo(peak)}
                 icon={faMountain}/>
               </Marker>
             )
@@ -99,7 +124,11 @@ const App = () => {
             >
               <div
                 onMouseLeave={() => setPopupInfo(null)}
-                onClick={(e) => {
+                onClick={() => {
+                  setActivePeakInfo({peak: popupInfo, trailheads: null, routes: null})
+                  fetch(`http://localhost:8000/peaks/${popupInfo.pkKey}`)
+                    .then(res => res.json())
+                    .then(res => setActivePeakInfo({...res, peak: popupInfo}))
                   
                   console.log('click')
                 }}
