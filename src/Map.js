@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactMapGl, { Marker, Popup, NavigationControl } from 'react-map-gl'
+import { Link } from '@reach/router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMountain } from '@fortawesome/free-solid-svg-icons'
 import commaNumber from 'comma-number'
@@ -24,54 +25,46 @@ const MapCanvas = ({
   const [popupInfo, setPopupInfo] = useState(null)
 
   return (
-    <ReactMapGl
+    <div className='map-area'>
+      <ReactMapGl
       {...viewport}
       mapboxApiAccessToken={mapboxApiToken}
-      onViewportChange={viewport => setViewport(viewport)}
-    >
-      <div className='navigation-control'>
-        <NavigationControl />
-      </div>
-      {peaks.map((peak) => {
-        return (
-          <Marker
-            latitude={Number(peak.latitude)}
-            longitude={Number(peak.longitude)}
-            
-          >
-            <FontAwesomeIcon 
-            onMouseEnter={() => setPopupInfo(peak)}
-            icon={faMountain}/>
-          </Marker>
-        )
-      })}
-      {popupInfo && <Popup
-        className='peak-popup'
-        anchor='top'
-        latitude={Number(popupInfo.latitude)}
-        longitude={Number(popupInfo.longitude)}
-        onClose={() => setPopupInfo(null)}
-        closeOnClick={false}
-        captureClick={true}
+      onViewportChange={setViewport}
+      >
+        <div className='navigation-control'>
+          <NavigationControl />
+        </div>
+        {peaks.map((peak) => {
+          return (
+            <Marker
+              latitude={Number(peak.latitude)}
+              longitude={Number(peak.longitude)}
+              
+            >
+              <FontAwesomeIcon 
+              onMouseEnter={() => setPopupInfo(peak)}
+              icon={faMountain}/>
+            </Marker>
+          )
+        })}
+        {popupInfo && <Link to={`/peak/${popupInfo.pkKey}`}
+          onMouseLeave={() => setPopupInfo(null)}
         >
-          <div
-            onMouseLeave={() => setPopupInfo(null)}
-            onClick={() => {
-              setPeakInfo(popupInfo)
-              fetch(`http://localhost:8000/peaks/${popupInfo.pkKey}`)
-                .then(res => res.json())
-                .then(({peakTrailheads, peakRoutes}) => {
-                  setTrailheadInfo(peakTrailheads)
-                  setRouteInfo(peakRoutes)
-                })
-
-            }}
+        <Popup
+          className='peak-popup'
+          anchor='top'
+          latitude={Number(popupInfo.latitude)}
+          longitude={Number(popupInfo.longitude)}
+          onClose={() => setPopupInfo(null)}
+          closeOnClick={false}
+          captureClick={true}
           >
             <h3>{`${popupInfo.name} • ${commaNumber(popupInfo.elevation)}'`}</h3>
             <img className='peak-thumbnail' src={popupInfo.thumbnail}/>
-          </div>
-        </Popup>}
-    </ReactMapGl>
+          </Popup>
+        </Link>}
+      </ReactMapGl>
+    </div> 
   )
 }
 

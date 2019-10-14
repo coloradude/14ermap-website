@@ -8,7 +8,7 @@
   height: 40vmin;
 }
 
-.sideBar {
+.side-bar {
   background: rgb(40,44,52);
   background: linear-gradient(90deg, rgba(40,44,52,1) 0%, rgba(40,44,52,1) 98%, rgba(40,44,52,0.8813900560224089) 100%);
   min-height: 100vh;
@@ -18,7 +18,7 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
-  width: 50%;
+  width: 100%;
   overflow-y: scroll;
   max-width: 100%;
 }
@@ -35,12 +35,12 @@
   color: #09d3ac;
 }
 
-.mapArea {
+.map-area {
   width: 100%;
   height: 100vh;
 }
 
-.sideBar h1 {
+.side-bar h1 {
 }
 
 .leaflet-container {
@@ -85,4 +85,10 @@ svg[data-icon='mountain'] {
   padding: 10px 0;
   border-radius: 2px;
 
+}
+
+#root > div > div:nth-child(1) {
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
 }
