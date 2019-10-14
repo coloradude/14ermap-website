@@ -2814,50 +2814,6 @@ const peaks = [{
           "report" : "The ridge between Redcloud and Sunshine is still clear. No picture as it was a whiteout for me.If you chose the way down the Northwest Face instead of coming back to Redcloud, here are some pictures. You are kind of surfing on big boulders at the start of the descent, then few snow fields easily crossed before reaching the gendarme which is a bit tricky. I had to descent on my butt most of the time, it's steep with loose rock but short. There are few gendarmes so you can chose the one to descent.Then the gully is still full of snow so the descent is made easily, beautiful route and it saves plenty of time."
       }
   ]
-}
-,{ 
-  "_id" : "5612e92d6af746b1be64edc3", 
-  "name" : "Longs Peak (Main)", 
-  "thKey" : "fr10", 
-  "pkKeys" : [
-      "200"
-  ], 
-  "directions" : "The trailhead is west of Colorado 7 and can be reached from the north or the south. For the northern approach, drive 9.2 miles south from the intersection of US 36 and CO 7 to the turnoff for the Ranger Station. For the southern approach, drive north 10 miles from the junction of CO 7 and CO 72 on the Peak to Peak Highway to the Ranger Station turnoff. From the turnoff drive west 1 mile to the trailhead.  Note: Car-camping is not allowed in the parking area.  There is a tent campground nearby and a couple of full campgrounds near Meeker Park.", 
-  "roadInfo" : "2WD paved to the TH.", 
-  "winterAccess" : "Open year-round.", 
-  "difficulty" : "0", 
-  "latitude" : "40.27223", 
-  "longitude" : "-105.55679", 
-  "lastUpdate" : "201101311200", 
-  "thConditions" : [
-      {
-          "date" : "2014-02-09", 
-          "user" : "Michael Underwood", 
-          "report" : "This is always one of the most accessible trailheads in the winter, but for those of you with 2WD and no snow tires, be careful going up the paved road to the parking lot - it's pretty snowy currently, and you can definitely slip around a bit as you negotiate the turns. I saw an SUV in the ditch and some skid marks in the snow, indicating another car that had run into a bank of plowed snow beside the road. Also, the parking area can get a bit cramped at the moment since not all of it has been plowed, restricting the official parking area to the first few spaces."
-      }, 
-      {
-          "date" : "2013-09-27", 
-          "user" : "Tyler Phillips", 
-          "report" : "Longs Peak Road and Trailhead had been reopened."
-      }, 
-      {
-          "date" : "2013-09-23", 
-          "user" : "Eagle Eye", 
-          "report" : "Longs Peak TH closedOn 9/22/2013 I found a barricade on the road closure leading to the trailhead/parking lot.The sign says:  TEMPORARY CLOSURE: DUE TO FLOODING AND STRUCTURAL DAMAGE THIS AREA IS CLOSED UNTIL FURTHER NOTICE"
-      }, 
-      {
-          "date" : "2012-03-01", 
-          "user" : "richwill", 
-          "report" : "Road is plowed and dry to ranger station. Parking area is plowed and accessable to any vehicle."
-      }, 
-      {
-          "date" : "2012-02-11", 
-          "user" : "richwill", 
-          "report" : "Longs Peak Road plowed & mostly clean all the way to rangers station. Accessable in any vehicle with decent tires."
-      }
-  ], 
-  "thumbnail" : "http://www.14ers.com/photos/longspeak/lRLong_101.jpg"
-}
-]
+}]
 
 export default peaks

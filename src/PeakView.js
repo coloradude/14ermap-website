@@ -1,6 +1,7 @@
 import React , { useState, useEffect } from 'react'
 import commaNumber from 'comma-number'
 import peakList from './peaks'
+import { Link } from '@reach/router'
 
 const TrailheadList = ({trailheads}) => {
   return (
@@ -9,11 +10,11 @@ const TrailheadList = ({trailheads}) => {
       {trailheads && 
       trailheads.map(trailhead => {
           return (
-            <button 
+            <Link to={`/trailhead/${trailhead._id}`}
               className='route-button'
             >
-              {`${trailhead.name}`}
-            </button>
+              <button >{`${trailhead.name}`}</button>
+            </Link>
           )
         })}
     </div>
@@ -27,11 +28,11 @@ const RouteList = ({routes}) => {
       {routes &&
       routes.map(route => {
         return (
-          <button
+          <Link to={`/route/${route._id}`}
             className='route-button'
           >
-            {`${route.name} • ${route.difficulty}`}
-          </button>
+            <button>{`${route.name} • ${route.difficulty}`}</button>
+          </Link>
         )
       })
       }

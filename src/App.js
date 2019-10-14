@@ -1,8 +1,10 @@
 import React from 'react'
 import PeakView from './PeakView'
+import RouteView from './RouteView'
 import MapCanvas from './Map.js'
 import './App.css';
 import { Router } from '@reach/router'
+import TrailheadView from './TrailheadView';
 
 
 
@@ -17,6 +19,8 @@ const App = ({sideBar, getters, setters}) => {
       <Router >
         <Home path='/' />
         <PeakView path='peak/:pkKey' />
+        <RouteView path='route/:routeId' />
+        <TrailheadView path='trailhead/:trailheadId' />
       </Router>
       <MapCanvas />
     </div>
